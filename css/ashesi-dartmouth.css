@@ -1,27 +1,34 @@
+img {
+  display: inline-block;
+  max-width: 100%;
+}
+
 .header {
-  height: 500px;
-  background-image: -webkit-linear-gradient(270deg, rgba(0, 0, 0, .55), rgba(0, 0, 0, .55)), url('../images/baby_ARIDA.jpg');
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, .55), rgba(0, 0, 0, .55)), url('../images/baby_ARIDA.jpg');
-  background-position: 0px 0px, 50% 50%;
-  background-size: auto, cover;
-  background-repeat: repeat, no-repeat;
-  background-attachment: scroll, fixed;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #096139;
+}
+
+.contentbody {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: hsla(0, 0%, 100%, .95);
 }
 
 .container {
-  padding-top: 99px;
   text-align: center;
 }
 
 .heading {
   position: relative;
+  margin-top: 0px;
+  margin-bottom: 0px;
   color: #fff;
 }
 
 .footer {
   height: 100px;
-  margin-top: 50px;
-  background-color: #096139;
+  text-align: center;
 }
 
 .tabs-menu {
@@ -29,13 +36,159 @@
 }
 
 .tab-link {
-  margin: 20px 10px;
+  margin-right: 10px;
+  margin-bottom: 35px;
+  margin-left: 10px;
   border-radius: 5px;
   background-color: rgba(9, 97, 57, .75);
+  -webkit-transition: background-color 200ms ease;
+  transition: background-color 200ms ease;
   color: #fff;
+  font-size: 20px;
+}
+
+.tab-link:hover {
+  background-color: rgba(9, 97, 57, .95);
+  -webkit-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
 }
 
 .tab-link.w--current {
   background-color: #096139;
+}
+
+.body {
+  background-color: #096139;
+  font-size: 18px;
+  line-height: 29px;
+}
+
+.photo {
+  margin-top: 30px;
+}
+
+.block-quote {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-left-color: #096139;
+  color: #096139;
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 700;
+}
+
+.superheader {
+  padding: 15px 20px;
+  background-color: #071e25;
+}
+
+.image {
+  float: left;
+  -webkit-transition: -webkit-transform 200ms ease;
+  transition: -webkit-transform 200ms ease;
+  transition: transform 200ms ease;
+  transition: transform 200ms ease, -webkit-transform 200ms ease;
+}
+
+.image:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.image-2 {
+  float: right;
+  -webkit-transition: -webkit-transform 200ms ease;
+  transition: -webkit-transform 200ms ease;
+  transition: transform 200ms ease;
+  transition: transform 200ms ease, -webkit-transform 200ms ease;
+}
+
+.image-2:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.link-block {
+  float: left;
+}
+
+.link-block-2 {
+  float: right;
+}
+
+.image-3 {
+  padding: 20px;
+  -webkit-transition: -webkit-transform 200ms ease;
+  transition: -webkit-transform 200ms ease;
+  transition: transform 200ms ease;
+  transition: transform 200ms ease, -webkit-transform 200ms ease;
+}
+
+.image-3:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+@media (max-width: 991px) {
+  .header {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .tab-link {
+    font-size: 17px;
+  }
+  .container-2 {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .body {
+    font-size: 16px;
+    line-height: 27px;
+  }
+}
+
+@media (max-width: 479px) {
+  .contentbody {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .container {
+    padding: 0px;
+  }
+  .heading {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .tabs-menu {
+    margin-bottom: 25px;
+  }
+  .tab-link {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    font-size: 18px;
+    text-align: center;
+  }
 }
 
